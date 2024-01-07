@@ -35,6 +35,7 @@ function createNewTaskElement(taskString) {
   deleteButton.className = 'delete';
   deleteButtonImg.classList.add('delete-image');
   deleteButtonImg.src = './remove.svg';
+  deleteButtonImg.alt = 'Remove task';
   deleteButton.appendChild(deleteButtonImg);
   // and appending.
   listItem.appendChild(checkBox);
@@ -110,7 +111,7 @@ function addTask() {
   taskInput.value = '';
 }
 // The glue to hold it all together.
-// Set the click handler to the addTask function.
+// Set the click handler to the addTask function
 addButton.onclick = addTask;
 addButton.addEventListener('click', addTask);
 // cycle over incompleteTaskHolder ul list items
